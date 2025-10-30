@@ -30,9 +30,9 @@ const data = await farmService.getAll();
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-2 px-4 py-2 bg-white border-2 border-gray-200 rounded-lg hover:border-primary transition-colors duration-200 min-h-[48px]"
       >
-        <ApperIcon name="Map" size={20} className="text-primary" />
+<ApperIcon name="Map" size={20} className="text-primary" />
         <span className="font-medium text-gray-900">
-{selectedFarm ? selectedFarm.name_c : "Select Farm"}
+          {selectedFarm ? selectedFarm.name_c : "Select Farm"}
         </span>
         <ApperIcon name="ChevronDown" size={20} className="text-gray-500" />
       </button>
@@ -58,9 +58,9 @@ const data = await farmService.getAll();
                       : "hover:bg-gray-100 text-gray-700"
                   }`}
                 >
-                  <div className="flex items-center justify-between">
+<div className="flex items-center justify-between">
                     <div>
-<p className="font-medium">{farm.name_c}</p>
+                      <p className="font-medium text-current">{farm.name_c}</p>
                       <p className="text-sm text-gray-500">
                         {farm.size_c} {farm.unit_c}
                       </p>
